@@ -2,10 +2,10 @@ import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
 
 @Component({
-  selector: 'app-inicio',
+  selector: 'app-sobre-nosotros',
   standalone: true,
   imports: [RouterModule],
-  templateUrl: './inicio.html',
-  styleUrl: './inicio.scss'
+  templateUrl: './sobre-nosotros.html',
+  styleUrl: './sobre-nosotros.scss'
 })
-export class InicioComponent {}
+export class SobreNosotrosComponent {}

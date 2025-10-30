@@ -1,1 +1,78 @@
-<h1>Página de inicio funcionando 🎉</h1>
+
+<html lang="es">
+
+  <meta charset="UTF-8">
+  <title>Portafolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+
+  <header class="bg-dark text-white text-center p-3">
+    <code>&lt; BIENVENIDO A MI PORTAFOLIO &gt;</code>
+
+    <nav>
+  <a routerLink="/" class="btn btn-outline-light m-1">Inicio</a>
+  <a routerLink="/galeria" class="btn btn-outline-light m-1">Galería</a>
+  <a routerLink="/sobre-nosotros" class="btn btn-outline-light m-1">Sobre Nosotros</a>
+</nav>
+
+  </header>
+
+  <main class="container mt-4">
+    <section>
+      <h2 class="Subtitulo"><code>Sobre mí</code></h2>
+      <p>Profesional en Ing. de software con conocimientos en procesos de calidad y diseño gráfico. Interesado por la innovación e inteligencia artifical para la mejora continua de los procesos.</p>
+      <a routerLink="/galeria" class="btn btn-primary">Ir a la Galería</a>
+
+    </section>
+  </main>
+
+  <!-- Sección destacados-->
+
+  <section id="destacados" class="mt-5" class="bg-dark text-white text-center p-3">
+  <h2 class="text-primary text-center mb-4">Diseños Destacados</h2>
+  <div class="row">
+
+    <!-- Día del hombre -->
+
+    <div class="col-md-4">
+      <div class="card">
+        <img src="assets/img/dia-del-hombre.jpg" class="card-img-top" alt="Día del Hombre" />
+
+        <div class="card-body">
+          <h5 class="card-title">Día del Hombre</h5>
+          <p class="card-text">Diseño en representación al día del Hombre.</p>
+          <a [routerLink]="['/detalle']" [queryParams]="{ id: 'Hombre' }" class="btn btn-sm btn-info">Ver más</a>
+        </div>
+      </div>
+    </div>
+
+        <!-- Día de la mujer} -->
+     
+    <div class="col-md-4">
+      <div class="card">
+        <img src="assets/img/Mujer.jpg" class="card-img-top" alt="Batalla Dell">
+        <div class="card-body">
+          <h5 class="card-title">Celebración día de la mujer</h5>
+          <p class="card-text">Diseño en representación al día de la Mujer.</p>
+          <a [routerLink]="['/detalle']" [queryParams]="{ id: 'BatallaDell' }" class="btn btn-sm btn-info">Ver más</a>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- F1 -->
+     
+    <div id="f1" class="col-md-4">
+      <div class="card">
+        <img src="assets/img/F1.jpg" class="card-img-top" alt="Batalla Dell">
+        <div class="card-body">
+          <h5 class="card-title">En sus marcas... ¿Listos? ¡A ganar!</h5>
+          <p class="card-text">Poster diseñado para la marca Cisco para participar en compras de su marca y ganar un pasaporte directo a la F1.</p>
+          <a [routerLink]="['/detalle']" [queryParams]="{ id: 'BatallaDell' }" class="btn btn-sm btn-info">Ver más</a>
+        </div>
+      </div>
+    </div>
+
+  <footer class="bg-dark text-white text-center p-3 mt-5">
+    © Todos los derechos reservados 2025
+  </footer>

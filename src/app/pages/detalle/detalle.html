@@ -1,0 +1,20 @@
+<header class="bg-dark text-white text-center p-3">
+  <h1>Detalle de Imagen</h1>
+  <nav>
+    <a routerLink="/" class="btn btn-outline-light m-1">Inicio</a>
+    <a routerLink="/galeria" class="btn btn-outline-light m-1">Galería</a>
+    <a routerLink="/sobre-nosotros" class="btn btn-outline-light m-1">Sobre Nosotros</a>
+  </nav>
+</header>
+
+<main class="container mt-4 text-center">
+  <img [src]="imagenUrl" class="img-fluid mb-3" style="max-height:400px;" />
+  <h3>{{ titulo }}</h3>
+  <p>{{ descripcion }}</p>
+  <p><strong>Autor:</strong> {{ autor }}</p>
+  <a routerLink="/galeria" class="btn btn-secondary mt-3">Volver a la galería</a>
+</main>
+
+<footer class="bg-dark text-white text-center p-3 mt-5">
+  © 2025 Mi Galería
+</footer>
