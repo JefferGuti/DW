@@ -37,7 +37,37 @@ export class DetalleComponent {
         titulo: 'Navidad con Samsung',
         descripcion: 'Campaña navideña con productos Samsung.',
         autor: 'Jefferson Gutierrez'
-      }
+      },
+      F1: {
+    imagen: 'assets/img/F1.jpg',
+    titulo: 'Cisco & F1',
+    descripcion: 'Poster diseñado para participar en compras de Cisco y ganar acceso a la F1.',
+    autor: 'Jefferson Gutierrez'
+  },
+  DahuaNeon: {
+    imagen: 'assets/img/DahuaNeon.jpg',
+    titulo: 'Gana con Dahua',
+    descripcion: 'Campaña promocional con productos Dahua.',
+    autor: 'Jefferson Gutierrez'
+  },
+  PremioGenius: {
+    imagen: 'assets/img/PremioGenius.jpg',
+    titulo: 'Premios con Genius',
+    descripcion: 'Reconocimiento a la fidelidad con productos Genius.',
+    autor: 'Jefferson Gutierrez'
+  },
+  DUCATI: {
+    imagen: 'assets/img/DUCATI.png',
+    titulo: 'Pasión por las motos',
+    descripcion: 'Diseño inspirado en la adrenalina de las motocicletas.',
+    autor: 'Jefferson Gutierrez'
+  },
+  Game: {
+    imagen: 'assets/img/Game.jpg',
+    titulo: 'Pasión por los videojuegos',
+    descripcion: 'Diseño dedicado a los amantes del gaming.',
+    autor: 'Jefferson Gutierrez'
+  }
       // Puedes agregar más entradas aquí
     };
 
