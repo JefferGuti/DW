@@ -1,64 +1,68 @@
-<<<<<<< HEAD
-# FrontendFinal
+Proyecto Full Stack: 
+Portafolio Web con Galería
+Este proyecto consiste en una aplicación web desarrollada con Angular (frontend) y Node.js con Express (backend). Su propósito es mostrar un portafolio interactivo con navegación entre vistas, galería de imágenes, formulario de contacto, autenticación básica y conexión con una API RESTful.
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.3.6.
+Estructura del Proyecto
+Código
+/frontend-final   → Aplicación Angular
+/backend-final    → API REST con Express
+Cada módulo tiene su propio package.json, configuración independiente y documentación.
 
-## Development server
+Frontend: Angular 17 (Standalone)
+Características
+Navegación entre vistas: Inicio, Galería, Sobre Nosotros, Detalle
 
-To start a local development server, run:
+Enrutamiento con RouterModule y app.routes.ts
 
-```bash
+Componentes standalone organizados por carpeta
+
+Estilos globales con Bootstrap y CSS personalizado
+
+Formulario de contacto con validaciones
+
+Vista de detalle con parámetros dinámicos (queryParams)
+
+Almacenamiento local (localStorage) para autenticación
+
+Comunicación con el backend mediante HttpClient
+
+Visualización de datos con *ngFor en tarjetas
+
+Instalación
+bash
+cd frontend-final
+npm install
 ng serve
-```
+Despliegue
+El frontend está publicado en GitHub.
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+Backend: Node.js + Express + MongoDB
+Características
+API RESTful con rutas para autenticación, usuarios y contacto
 
-## Code scaffolding
+Uso de dotenv para configuración segura
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+Conexión a MongoDB Atlas o local
 
-```bash
-ng generate component component-name
-```
+Validación de datos con middleware
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+Autenticación con JWT
 
-```bash
-ng generate --help
-```
+CORS habilitado para conexión con el frontend
 
-## Building
+Instalación
+bash
+cd backend-final
+npm install
+npm start
+Endpoints principales
+POST /api/login → Autenticación
 
-To build the project run:
+POST /api/contacto → Envío de formulario
 
-```bash
-ng build
-```
+GET /api/usuario → Datos del usuario autenticado
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+Despliegue
+El backend puede ser publicado en Render, Railway o cualquier plataforma compatible con Node.js
 
-## Running unit tests
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
-=======
-# DW
-Desarrollo Web
->>>>>>> 784949a668f9b7179859f7f026108597031f7587
